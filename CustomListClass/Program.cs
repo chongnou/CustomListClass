@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CustomListClass
 {
@@ -10,6 +6,13 @@ namespace CustomListClass
     {
         static void Main(string[] args)
         {
+            CustomList<string> listOne = new CustomList<string> { "This", "add", "operator", "is", "working!" };
+            CustomList<string> listTwo = new CustomList<string> { "add" };
+            CustomList<string> actual = new CustomList<string>();
+            actual = listOne - listTwo;
+            Console.WriteLine(actual);
+            Console.ReadLine();
+
         }
     }
 }

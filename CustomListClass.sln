@@ -1,9 +1,9 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27703.2042
-MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomListClass", "CustomListClass\CustomListClass.csproj", "{15817795-4F05-4AB6-A229-93BA15564638}"
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomListClass", "CustomListClass\CustomListClass.csproj", "{9709C615-ABAC-452E-A912-A5631FD09847}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomListClassTests", "CustomListClassTests\CustomListClassTests.csproj", "{0B01E6A5-B0BA-4CCF-AD36-C46DF8B3E271}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,13 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{15817795-4F05-4AB6-A229-93BA15564638}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{15817795-4F05-4AB6-A229-93BA15564638}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{15817795-4F05-4AB6-A229-93BA15564638}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{15817795-4F05-4AB6-A229-93BA15564638}.Release|Any CPU.Build.0 = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {E4373423-B340-400E-970A-311215B70576}
+		{9709C615-ABAC-452E-A912-A5631FD09847}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9709C615-ABAC-452E-A912-A5631FD09847}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9709C615-ABAC-452E-A912-A5631FD09847}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9709C615-ABAC-452E-A912-A5631FD09847}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B01E6A5-B0BA-4CCF-AD36-C46DF8B3E271}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B01E6A5-B0BA-4CCF-AD36-C46DF8B3E271}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B01E6A5-B0BA-4CCF-AD36-C46DF8B3E271}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B01E6A5-B0BA-4CCF-AD36-C46DF8B3E271}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
