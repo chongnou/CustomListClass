@@ -38,6 +38,22 @@ namespace CustomListClass
             }
         }
 
+        public void Remove(T input)
+        {
+            for (int i = 0; i < listCount; i++)
+            {
+                T checkInput = inputs[i];
+                if (checkInput.Equals(input) == true)
+                {
+                    for (int x = i; x < listCount; x++)
+                    {
+                        inputs[x] = inputs[x + 1];
+                    }
+                    listCount--;
+                }
+            }
+        }
+
     }
 }
 
