@@ -133,6 +133,26 @@ namespace CustomListClass
             return newInputs;
         }
 
+        public static CustomList<T> operator -(CustomList<T> listOne, CustomList<T> listTwo)
+        {
+            CustomList<T> listThree = new CustomList<T>();
+            listThree= listThree.TransferListContents(listOne);
+
+            for (int x = 0; x < listTwo.listCount; x++)                 //for each item in list2 (list2Item)
+            {
+                T listTwoItem = listTwo[x];                         
+                for (int i = 0; i < listThree.listCount; i++)             //loop through list1     (list1Item)
+                {
+                    T listThreeItem = listThree[i];
+                    if (listThreeItem.Equals(listTwoItem) == true)    //If they are equal
+                    {
+                        listThree.Remove(listTwoItem);                //remove from list1                            
+                    }
+                }
+            }
+            return listThree;
+        }
+
         
     }
 }
