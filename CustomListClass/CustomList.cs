@@ -78,7 +78,43 @@ namespace CustomListClass
             return listCount;
         }
 
-        
+        public CustomList<T> ZipNewArray(CustomList<T> listOne, CustomList<T> listTwo)
+        {
+            CustomList<T> newInputs = new CustomList<T>();
+            int newListCount1 = listOne.listCount; 
+            int newListCount2 = listTwo.listCount;
+            int newListCount = newListCount1 + newListCount2;
+                                      
+
+            for (int x = 0; x < newListCount; x++)
+            {
+                if(newListCount1 > 0 && newListCount2 > 0)
+                {
+                    newInputs.Add(listOne[x]);
+                    newListCount1--;
+                    newInputs.Add(listTwo[x]);
+                    newListCount2--; 
+                }
+                else if (newListCount1 > 0 && newListCount2 <= 0)
+                {
+                    newInputs.Add(listOne[x]);
+                    newListCount1--;
+                }
+                else if (newListCount2 > 0 && newListCount1 <= 0)
+                {
+                    newInputs.Add(listTwo[x]);
+                    newListCount2--;
+                }
+                else
+                {
+                    return newInputs;
+                }
+               
+            }
+            return newInputs;
+        }
+
+
     }
 }
 
