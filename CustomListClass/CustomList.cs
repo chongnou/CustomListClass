@@ -153,6 +153,18 @@ namespace CustomListClass
             return listThree;
         }
 
+        public CustomList<T> TransferListContents(CustomList<T> listOne)
+        {
+            CustomList<T> listTwo = new CustomList<T>();
+            for (int x = 0; x < listOne.listCount; x++)
+            {
+                listTwo.Add(listOne[x]);
+            }
+            return listTwo;
+        }
+
+
+
         
     }
 }
