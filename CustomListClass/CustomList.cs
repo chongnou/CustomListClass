@@ -54,6 +54,31 @@ namespace CustomListClass
             }
         }
 
+        public override string ToString()
+        {
+            string listString = "";
+            for (int i = 0; i < listCount; i++)
+            {
+                if(i == listCount-1)
+                {
+                    T value = inputs[i];
+                    listString += value + " ";  
+                }
+                else
+                {
+                    T value = inputs[i];
+                    listString += value + ", ";  
+                }
+            }
+            return listString;
+        }
+
+        public int ListCount()
+        { 
+            return listCount;
+        }
+
+        
     }
 }
 
