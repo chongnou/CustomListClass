@@ -114,7 +114,26 @@ namespace CustomListClass
             return newInputs;
         }
 
+        public static CustomList<T> operator +(CustomList<T> listOne, CustomList<T> listTwo)
+        {
+            CustomList<T> newInputs = new CustomList<T>();
+            int newListCount1 = listOne.ListCount()+2; 
+            int newListCount2 = listTwo.ListCount()+2;
 
+            for (int x = 0; x < newListCount1; x++)
+            {
+                newInputs.Add(listOne[x]);
+                newListCount1--;
+            }
+            for (int x = 0; x < newListCount2; x++)
+            {
+                newInputs.Add(listTwo[x]);
+                newListCount2--;
+            }
+            return newInputs;
+        }
+
+        
     }
 }
 
