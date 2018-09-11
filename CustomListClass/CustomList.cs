@@ -26,9 +26,9 @@ namespace CustomListClass
         //MEMBER METHODS
         public void Add(T input)
         {
-            if (listCount < capacity / 2)
+            if (listCount < capacity/2)
             {
-                inputs[listCount] = input;
+                inputs[listCount] = input;  
                 listCount++;
             }
             else
@@ -38,22 +38,7 @@ namespace CustomListClass
             }
         }
 
-        public void Remove(T input)
-        {
-            for (int i = 0; i < listCount; i++)
-            {
-                T checkInput = inputs[i];
-                if (checkInput.Equals(input) == true)
-                {
-                    for (int x = i; x < listCount; x++)
-                    {
-                        inputs[x] = inputs[x + 1];
-                    }
-                    listCount--;
-                }
-            }
-        }
-
+        
     }
 }
 
