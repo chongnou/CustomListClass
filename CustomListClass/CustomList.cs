@@ -165,7 +165,31 @@ namespace CustomListClass
 
 
 
-        
+        public T[] Resize()
+        {
+            capacity *= 2;
+            T[] inputs2 = new T[capacity];
+            for (int x = 0; x < inputs.Length; x++)
+            {
+                inputs2[x] = inputs[x];
+            }
+            inputs = inputs2;
+            return inputs;
+        }
+
+        public IEnumerator<T> GetEnumerator()
+        {
+            for (int x = 0; x <= inputs.Length; x++)
+            {
+                yield return inputs[x];
+            } 
+        }
+
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            return GetEnumerator();
+        }
+
     }
 }
 
